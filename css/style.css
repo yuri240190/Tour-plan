@@ -473,6 +473,7 @@ template {
   font-size: 14px;
   line-height: 18px;
   margin-left: 18px;
+  color: #333333;
 }
 
 @media (max-width: 1900px) {
@@ -483,7 +484,7 @@ template {
 
 @media (max-width: 1440px) {
   .container {
-    max-width: 1180px;
+    max-width: 1110px;
   }
 }
 
@@ -511,16 +512,16 @@ template {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar__link {
+  .navbar-menu__link {
     font-size: 12px;
-    line-height: 15;
+    line-height: 15px;
   }
   .search__input {
     width: 340px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -567,7 +568,17 @@ template {
 
 @media (max-width: 480px) and (min-width: 320px) {
   .container {
-    width: 90%;
+    width: 87%;
+  }
+  .logo {
+    padding: 0;
+    height: 13.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
