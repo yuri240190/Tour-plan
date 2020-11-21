@@ -1,5 +1,5 @@
 .hotel
-  padding-top: 23px
+  padding-top: 24px
   padding-bottom: 20px
   &-info
     display: flex
@@ -9,6 +9,7 @@
       margin-left: 14px
       margin-top: 4px
     &__name
+
       margin-top: 4px
       margin-bottom: 0
       text-transform: uppercase
@@ -24,7 +25,14 @@
     font-size: 12px
     line-height: 15px
 .stars
+  display: flex
+  align-items: center
+  height: 8px
   flex-basis: 100%
+  &-star
+    margin-right: 3px
+    width: 8px
+    height: 8px
 .offer
   font-size: 10px
   line-height: 13px
@@ -45,3 +53,7 @@
   &__counter
     font-size: 14px
     line-height: 18px
+  &__max
+    margin: 0
+    padding: 0
+    font-size: 12px
