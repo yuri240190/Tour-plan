@@ -741,6 +741,9 @@ span.rating__counter::after {
   .container {
     width: 87%;
   }
+  .navbar-top {
+    padding: 28px 0;
+  }
   .logo {
     padding: 0;
     height: 13.5px;
