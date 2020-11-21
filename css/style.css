@@ -653,7 +653,7 @@ span.rating__counter::after {
     width: 92%;
   }
   .navbar-top {
-    padding: 20px 0;
+    padding: 30px 0;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
