@@ -440,6 +440,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  outline-style: none;
 }
 
 .search__button {
@@ -450,6 +451,8 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  outline-style: none;
+  cursor: pointer;
 }
 
 .user {
@@ -600,7 +603,7 @@ template {
 
 span.rating__counter::after {
   content: '5';
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .swiper-container {
@@ -642,6 +645,7 @@ span.rating__counter::after {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  outline-style: none;
 }
 
 .slider-button--next {
