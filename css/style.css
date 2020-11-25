@@ -996,10 +996,10 @@ span.rating__counter::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
   }
   .booking {
     width: 100%;
+    margin-bottom: 20px;
   }
   .map {
     width: 100%;
@@ -1019,6 +1019,9 @@ span.rating__counter::after {
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
+  .hotel-info {
+    padding-bottom: 38px;
+  }
   .container {
     width: 87%;
   }
@@ -1034,6 +1037,15 @@ span.rating__counter::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .slider {
+    height: 179px;
+  }
+  .map {
+    height: 173px;
+  }
+  .booking {
+    height: 210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
