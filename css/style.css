@@ -948,6 +948,11 @@ span.rating__counter::after {
   margin-bottom: 70px;
 }
 
+.reviews-slider__img {
+  max-width: 6px;
+  min-height: 6px;
+}
+
 .reviews-slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1371,6 +1376,18 @@ span.rating__counter::after {
   .newsletter__title__strong {
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews {
+    padding-top: 36px;
+    padding-bottom: 0;
+  }
+  .reviews__title {
+    max-width: 245px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
