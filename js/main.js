@@ -50,8 +50,3 @@ function init () {
     };
 
 }
-
-  // // Центрируются все элементы
-  // var before = new Rellax('.newsletter', {
-  //   center: true
-  // });

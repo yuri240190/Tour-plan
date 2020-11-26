@@ -1,6 +1,12 @@
 @media ( max-width:1900px  )
   .container
     max-width: 1110px
+  .activities
+    &__title
+      margin-top: 0
+  .reviews
+    &__title
+      margin-top: 0
 
 @media (max-width: 1440px)
   .container
@@ -18,6 +24,11 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .reviews
+    padding-bottom: 70px
+  .card
+    width: 230px
+    height: 230px
 @media ( max-width:992px )
   .container,
   .newsletter-wrapper
@@ -62,6 +73,17 @@
     &-slider
       &__item
         max-width: 580px
+  .reviews
+    padding-bottom: 60px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
+
 @media ( max-width:767px )
   .container
     max-width: 576px
@@ -139,7 +161,11 @@
       flex-direction: column
       align-items: flex-start
   .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
     &-slider
+
       &__item
         padding: 0 30px 30px
         &::after,&::before
@@ -155,6 +181,12 @@
           margin-right: -65px
           right: 50%
           transform: translate(50%,0)
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
 
 @media (max-width: 576px)
   .logo
@@ -167,7 +199,17 @@
       margin-bottom: 20px
   .subscride
     width: 350px
+  .card
+    width: 100%
+  .activities
 
+    &__title
+      margin-top: 0
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+  .reviews
+    padding-bottom: 50px
 @media ( max-width: 480px) and (min-width: 320px)
   .hotel
     padding-bottom: 40px
@@ -187,7 +229,6 @@
     align-items: center
 
   .map
-
     height: 173px
   .booking
     height: 210px
@@ -209,8 +250,9 @@
         font-size: 30px
         line-height: 38px
   .reviews
-    padding-top: 36px
-    padding-bottom: 0
+    padding-top: 40px
+    padding-bottom: 50px
+
     &__title
       max-width: 245px
       margin: auto
