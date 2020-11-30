@@ -2,6 +2,7 @@
   padding: 40px 0 70px 0
 
   &__title
+    margin-top: 0
     font-family: Mulish
     font-style: normal
     font-weight: bold
@@ -12,6 +13,7 @@
     margin-bottom: 70px
   &-slider
     &__img
+      margin-right: 4px
       max-width: 6px
       min-height: 6px
     &__item
@@ -44,8 +46,9 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 37%
-      transform: translateY(-37%)
+      top: 42.5%
+      transform: translateY(-42.5%)
+
       width: 30px
       height: 30px
       background-repeat: no-repeat
@@ -75,7 +78,7 @@
       height: 90px
       border-radius: 50%
       object-fit: cover
-      margin-bottom: 9px
+      margin-bottom: 10px
     &__username
 
       font-family: Mulish
@@ -92,7 +95,7 @@
       font-weight: normal
       font-size: 10px
       line-height: 13px
-      margin-bottom: 4px
+      margin-bottom: 5px
 
     &__rating
 
@@ -100,6 +103,9 @@
       align-items: center
 
     &__text
+      text-align: justify
+      height: 133px
+      overflow-y: scroll
       align-items: flex-start
       margin: 0
       margin: auto
@@ -109,5 +115,4 @@
       font-weight: normal
       font-size: 12px
       line-height: 160%
-
       color: $text-color
