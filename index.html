@@ -16,22 +16,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/Best-tour-plan.svg" alt="logo:Best-tour-plan" 
           class="logo__image"></a>
-        <form action="#" class="search navbar__search">
-          <input
-           type="text" 
-           class="search__input"
-           placeholder="Search Location">
+        <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+          <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="icon">
           </button>
         </form>
-        <a class="user navbar__user" href="#">
+        <a class="user navbar__user navbar__user_mobile_hidden" href="#">
           <img src="img/user-avatar.jpg" alt="avatar:Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -47,6 +44,20 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <form action="#" class="search navbar__search navbar__search_mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="icon">
+              </button>
+            </form></li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <a class="user navbar__user navbar__user_mobile_visible" href="#">
+              <img src="img/user-avatar.jpg" alt="avatar:Nathan" class="user__avatar">
+              <span class="user__name user__name_light ">Nathan</span>
+            </a>
+
+            </li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a>
             </li>
             <li class="navbar-menu__item"><a href="# " class="navbar-menu__link">Hotels</a>
@@ -260,12 +271,12 @@
 <div class="plackages-fotter">
 <div class="plackages-column">
   <span class="plackages-flash2">Flash Offer</span>
-  <img src="img/plackages.jpg" alt="" class="plackages-image">
+  <img src="img/plackages.jpg" alt="" class="plackages-image  plackages-image_cover">
   <div class="plackages-box">
     <h3 class="plackages-caption">Hotel Blue Haven</h3>
     <div class="plackages-room">
       <div class="box-item">
-        <img class="plackages__icon" src="img/delaware.svg" alt="icon:user">
+        <img class="plackages__icon " src="img/delaware.svg" alt="icon:user">
         <span class="item-description">1749 Wheeler Ridge Delaware</span>
       </div>
       <div class="box-item">

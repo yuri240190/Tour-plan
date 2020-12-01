@@ -61,6 +61,11 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__wrap
+      margin-left: 0
 
 @media ( max-width:992px )
   .plackages
@@ -164,20 +169,90 @@
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
+    &__card:nth-last-child(1)
+      margin-bottom: 0
   .card
     width: 340px
     height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6,1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 48%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2
+
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__bottom
+      grid-column: span 5
+      grid-row: 5
 
 @media ( max-width:767px )
   .container
     max-width: 576px
     width: 90%
+  body
+    padding-top: 78px
 
   .navbar
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 100
+    &__user, &__search
+      &_mobile
+        &_hidden
+          display: none
+        &-visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+  .navbar
+    &-bottom
+      padding-top: 30px
+      display: none
+      position: fixed
+      left: 0
+      bottom: 0
+      right: 0
+      top: 78px
+
+      &-visible
+        display: block
+
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &_mobile
+          &_visible
+            display: block
     &-top
       padding: 30px 0
-    &__search, &-menu, &__user
-      display: none
 
   .menu
     &-button
@@ -196,6 +271,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &_light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     margin-right: 10px
     flex-basis: auto
@@ -347,6 +428,16 @@
         font-weight: normal
         font-size: 12px
         line-height: 15px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__legal
+      padding-left: 0
+    &__bottom
+      margin-top: 63px
+
+    &__wrapper
+      padding-left: 0
 
 @media (max-width: 576px)
 
@@ -419,6 +510,8 @@
 
     &-image
       width: 100%
+      &_cover
+        object-fit: cover
     &-column
       padding: 0
       margin: 0
@@ -431,6 +524,70 @@
     &-title
       font-size: 30px
 
+  .footer
+    &-wrapper
+      grid-row-gap: 0
+      grid-template-columns: 1fr
+    &__logo
+      width: 105px
+      height: 120px
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        margin-right: 0
+        flex-wrap: wrap
+
+        grid-row: 2
+        grid-column: 1
+    &__title
+      &--inline
+        flex-basis: 100%
+        margin-bottom: 22px
+
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        position: relative
+        grid-row: 7
+        grid-column: 1
+
+    &__bottom
+      margin-top: 63px
+      grid-row: 8
+      grid-column: 1
+      flex-wrap: wrap
+
+    &__button
+      margin-top: 30px
+
+    &__info
+      position: absolute
+      bottom: 70px
+
+    &__bottom
+
+    &__inf
+      display: inline-block
+      flex-basis: 100%
+      margin-bottom: 15px
+      margin-right: 50px
+
+      padding: 0
+    &__inf:nth-last-child(1)
+      margin-right: 0
+
 @media ( max-width: 480px) and (min-width: 320px)
   .hotel
     padding-bottom: 40px
@@ -442,7 +599,10 @@
   .container
     width: 87%
   .navbar-top
-    padding: 28px 0
+    padding: 28px 0 40px 0
+  .search
+    &__input
+      width: 98%
   .logo
     padding: 0
     height: 13.5px
@@ -508,3 +668,80 @@
       font-weight: bold
       font-size: 26px
       line-height: 32px
+  .footer
+
+    padding-top: 69px
+    padding-bottom: 20px
+    &__text
+      width: 280px
+      text-align: justify
+    &__ul
+      margin-bottom: 60px
+      width: 275px
+    &-wrapper
+      grid-row-gap: 0px
+
+    &__logo
+      width: 105px
+      height: 120px
+      grid-row: 1
+      grid-column: 320px
+      margin-bottom: 30px
+    &__social
+      &-links
+        margin-bottom: 31px
+        &-network
+          grid-row: 2
+          grid-column: 320px
+          flex-wrap: wrap
+    &__legal
+      height: 127px
+      grid-row: 3
+      grid-column: 320px
+      margin-bottom: 30px
+
+    &__additional
+      height: 177px
+      margin-bottom: 30px
+    &__categories
+      height: 218px
+      margin-bottom: 40px
+    &__input
+      margin-bottom: 15px
+    &__button
+      grid-row: 8
+      grid-column: 320px
+    &__info
+      grid-row: 9
+      grid-column: 320px
+    &__title
+      &--mb
+        margin-bottom: 15px
+      &--inline
+        margin-bottom: 20px
+
+    &__bottom
+      margin-top: 30px
+      display: flex
+      flex-direction: column
+      margin-top: 30px
+      align-items: start
+      grid-row: 8
+      grid-column: 320px
+    &__inf
+      margin: 0
+      margin-bottom: 0
+      padding: 0
+      width: 105px
+    &__inf:nth-last-child(3)
+      max-width: 70px
+      &__inf:nth-last-child(2)
+        max-width: 90px
+    &__wrap
+      margin-bottom: 15px
+      flex-basis: 100%
+      display: flex
+      justify-content: space-between
+    &__contact
+      &-form
+        width: 92%
