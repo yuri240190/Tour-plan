@@ -57,3 +57,5 @@ menuButton.addEventListener('click' , function (){
   .querySelector(".navbar-bottom")
   .classList.toggle("navbar-bottom-visible");
 });
+// document.getElementsByTagName("body")[0].style.position="fixed";
+// document.getElementsByTagName("body")[0].style.width="100%";
