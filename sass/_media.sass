@@ -66,6 +66,8 @@
       flex-basis: 100%
     &__wrap
       margin-left: 0
+    &__additional
+      width: 260px
 
 @media ( max-width:992px )
   .plackages
@@ -123,19 +125,14 @@
       margin-left: auto
 
     &-menu
-      padding-top: 0px
-      padding-bottom: 0px
-    &__item
-      height: 10px
+      padding-top: 22px
+      padding-bottom: 22px
 
-    &-wrapper
-      font-size: 12px
-      padding-top: 39px
-      text-align: center
       &__link
+        height: 12px
+
         font-size: 12px
         line-height: 15px
-        height: 12px
 
   .search
     &__input
@@ -184,12 +181,17 @@
     width: 340px
     height: 255px
   .footer
+    padding-top: 0
     &-wrapper
+      padding-top: 73px
       grid-template-columns: repeat(6,1fr)
       grid-row-gap: 40px
     &__input
       flex-basis: 48%
     &__logo
+
+      width: 105px
+      height: 120px
       grid-row: 1/2
       grid-column: span 2
 
@@ -202,18 +204,22 @@
       grid-row: 2/3
       grid-column: span 2
     &__legal
+      padding-left: 25px
       grid-column: span 2
     &__additional
+      width: 260px
       grid-column: span 2
     &__contact
       &-details
         grid-column: span 5
         grid-row: 3
       &-form
+        width: 540px
         grid-column: span 5
         grid-row: 4
     &__bottom
-      grid-column: span 5
+      margin-top: 33px
+      grid-column: span 6
       grid-row: 5
 
 @media ( max-width:767px )
@@ -224,6 +230,20 @@
     padding-top: 78px
 
   .navbar
+
+    &-menu
+
+      overflow: auto
+      padding: 0
+
+      &__item
+
+        &--item
+          margin-bottom: 20px
+          height: 14px
+        &--item:nth-last-child(7)
+          margin-top: 39px
+
     &__mobile
       &_fixed
         position: fixed
@@ -237,28 +257,37 @@
           display: none
         &-visible
           display: flex
+
     &__user
       flex-direction: column
       justify-content: center
+      margin-bottom: 27px
   .navbar
     &-bottom
-      padding-top: 30px
+      position: relative
+      padding-top: 31px
       display: none
       position: fixed
       left: 0
       bottom: 0
       right: 0
-      top: 80px
+      top: 78px
 
       &-visible
         display: block
 
     &-menu
       flex-direction: column
-      &__li
+      position: absolute
+      top: 0
+
+      bottom: 0
+      left: 0
+      right: 0
+      overflow: auto
 
       &__item
-        margin-bottom: 20px
+
         &_mobile
           &_visible
             display: block
@@ -267,6 +296,7 @@
       padding: 30px 0
 
   .menu
+
     &-button
       display: flex
       width: 16px
@@ -447,10 +477,12 @@
   .footer
     &__input
       flex-basis: 100%
+    &__additional
+      width: 150px
     &__legal
       padding-left: 0
     &__bottom
-      margin-top: 63px
+      margin-top: 33px
 
     &__wrapper
       padding-left: 0
@@ -545,12 +577,14 @@
       grid-row-gap: 0
       grid-template-columns: 1fr
     &__logo
+      margin-bottom: 20px
       width: 105px
       height: 120px
       grid-row: 1
       grid-column: 1
     &__social
       &-network
+        margin-bottom: 20px
         margin-right: 0
         flex-wrap: wrap
 
@@ -562,12 +596,16 @@
         margin-bottom: 22px
 
     &__legal
+      margin-bottom: 20px
       grid-row: 3
       grid-column: 1
     &__additional
+      margin-bottom: 20px
+      width: 300px
       grid-row: 4
       grid-column: 1
     &__categories
+      margin-bottom: 20px
       grid-row: 5
       grid-column: 1
     &__contact
@@ -575,12 +613,13 @@
         grid-row: 6
         grid-column: 1
       &-form
+        width: 440px
         position: relative
         grid-row: 7
         grid-column: 1
 
     &__bottom
-      margin-top: 63px
+      margin-top: 33px
       grid-row: 8
       grid-column: 1
       flex-wrap: wrap
@@ -760,4 +799,4 @@
       justify-content: space-between
     &__contact
       &-form
-        width: 92%
+        width: 281px

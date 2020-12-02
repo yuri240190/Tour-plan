@@ -56,6 +56,31 @@ menuButton.addEventListener('click' , function (){
   document
   .querySelector(".navbar-bottom")
   .classList.toggle("navbar-bottom-visible");
+ 
+
+
+
+ document.getElementsByTagName("body")[0].classList.toggle("fixed");
 });
-// document.getElementsByTagName("body")[0].style.position="fixed";
-// document.getElementsByTagName("body")[0].style.width="100%";
+// document.querySelector("body")[0].classList.toggle('body-fixed');
+//  var menuButton = document.querySelector('.menu-button');
+// menuButton.addEventListener('click' , function (){
+//   console.log('клик по кнопки меню')
+//   document
+ 
+
+  
+// });
+//  var menuButton = document.querySelector('.menu-button');
+// menuButton.addEventListener('on click' , function (){
+//   console.log('клик  меню')
+//   document
+  
+
+//  document.getElementsByTagName("body")[0].style.width="100%";
+  
+// });
+
+
+// //  document.getElementsByTagName("body")[0].style.position="fixed";
+// //  document.getElementsByTagName("body")[0].style.width="100%";
