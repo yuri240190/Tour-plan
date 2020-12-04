@@ -79,8 +79,13 @@ function closeModal(){
    modalDialog.removeClass("modal__dialog--visible")
 
 }
+document.body.addEventListener('keyup', function closeModal() {
+    var key = e.keyCode;
 
-
-
+    if (key == 27) {
+        document.querySelector('modal__overlay--visible').classList.remove('modal__overlay--visible');
+        document.querySelector('modal__dialog--visible').classList.remove('modal__dialog--visible');
+    };
+});
 
 });

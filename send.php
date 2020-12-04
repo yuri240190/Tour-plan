@@ -33,14 +33,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'killer123.ru@yuri-aldunenko.ru'; // Логин на почте
+    $mail->Username   = 'killer240190@mail.ru'; // Логин на почте
     $mail->Password   = 'rostislove2014'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('killer123.ru@yuri-aldunenko.ru', 'Юра Алдуненко'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('killer240190@mail.ru', 'Юра Алдуненко'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('killer240190@mail.ru');  
+    $mail->addAddress('nastya-borodina-93@mail.ru');  
   
 // Отправка сообщения
 $mail->isHTML(true);
