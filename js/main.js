@@ -1,3 +1,4 @@
+$(document).ready(function() {
 var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
@@ -56,31 +57,30 @@ menuButton.addEventListener('click' , function (){
   document
   .querySelector(".navbar-bottom")
   .classList.toggle("navbar-bottom-visible");
- 
-
-
-
  document.getElementsByTagName("body")[0].classList.toggle("fixed");
 });
-// document.querySelector("body")[0].classList.toggle('body-fixed');
-//  var menuButton = document.querySelector('.menu-button');
-// menuButton.addEventListener('click' , function (){
-//   console.log('клик по кнопки меню')
-//   document
- 
 
-  
-// });
-//  var menuButton = document.querySelector('.menu-button');
-// menuButton.addEventListener('on click' , function (){
-//   console.log('клик  меню')
-//   document
-  
+var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+modalButton.on("click", openModal);
+closeModalButton.on("click", closeModal);
 
-//  document.getElementsByTagName("body")[0].style.width="100%";
-  
-// });
+function openModal(){
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.addClass("modal__overlay--visible")
+   modalDialog.addClass("modal__dialog--visible")
+
+}
+function closeModal(){
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.removeClass("modal__overlay--visible")
+   modalDialog.removeClass("modal__dialog--visible")
+
+}
 
 
-// //  document.getElementsByTagName("body")[0].style.position="fixed";
-// //  document.getElementsByTagName("body")[0].style.width="100%";
+
+
+});
