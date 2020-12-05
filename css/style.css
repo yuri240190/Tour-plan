@@ -1760,7 +1760,6 @@ span.rating__counter::after {
 }
 
 .modal__dialog {
-  overflow-y: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1777,6 +1776,7 @@ span.rating__counter::after {
 }
 
 .modal__dialog--visible {
+  overflow: auto;
   visibility: visible;
   opacity: 1;
 }
@@ -1790,6 +1790,7 @@ span.rating__counter::after {
 }
 
 .modal__title {
+  margin-top: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;

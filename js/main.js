@@ -61,12 +61,32 @@ $(document).ready(function () {
 
 
   });
-  
-   var bookingButton = document.querySelector('.booking__button');
-  bookingButton.addEventListener('click', function () {
-  document.getElementsByTagName("body")[0].classList.toggle("body-fixed");
 
-  });
+    var bookingButton = document.querySelector('.booking__button');
+   bookingButton.addEventListener('click', function () {
+   document.getElementsByTagName("body")[0].classList.toggle("body-fixed");
+    var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay--visible")
+    modalDialog.addClass("modal__dialog--visible")
+
+  }
+  function closeModal() {
+    
+    var body = $("body");
+    body.removeClass("body-fixed")
+
+  };
+
+
+ });
+ 
  
  
 
