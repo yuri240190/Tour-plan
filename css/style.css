@@ -9,8 +9,9 @@ body {
   background-color: #F5FAFE;
 }
 
-.fixed {
+.body-fixed {
   position: fixed;
+  width: 100%;
 }
 
 .container {
@@ -1759,6 +1760,7 @@ span.rating__counter::after {
 }
 
 .modal__dialog {
+  overflow-y: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2504,7 +2506,7 @@ span.rating__counter::after {
     padding-left: 0;
   }
   .modal__dialog {
-    padding: 20px 25px;
+    padding: 20px 15px;
   }
   .modal__fotter {
     margin-top: px;
@@ -2744,9 +2746,15 @@ span.rating__counter::after {
   .footer__inf:nth-last-child(1) {
     margin-right: 0;
   }
+  .modal__dialog {
+    width: 400px;
+  }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
+  .modal__dialog {
+    width: 250px;
+  }
   .hotel {
     padding-bottom: 40px;
   }
@@ -2767,7 +2775,6 @@ span.rating__counter::after {
   }
   .logo {
     padding: 0;
-    height: 13.5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

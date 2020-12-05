@@ -508,7 +508,7 @@
       padding-left: 0
   .modal
     &__dialog
-      padding: 20px 25px
+      padding: 20px 15px
     &__fotter
       margin-top: px
       position: relative
@@ -611,6 +611,7 @@
       font-size: 30px
 
   .footer
+
     &-wrapper
       padding-top: 69px
       grid-row-gap: 0
@@ -693,9 +694,14 @@
       padding: 0
     &__inf:nth-last-child(1)
       margin-right: 0
+  .modal
+    &__dialog
+      width: 400px
 
 @media ( max-width: 480px) and (min-width: 320px)
-
+  .modal
+    &__dialog
+      width: 250px
   .hotel
     padding-bottom: 40px
     &-slider
@@ -712,7 +718,7 @@
       width: 98%
   .logo
     padding: 0
-    height: 13.5px
+
     display: flex
     align-items: center
 
