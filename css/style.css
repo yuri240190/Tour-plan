@@ -54,6 +54,27 @@ img {
   cursor: pointer;
 }
 
+.button__back {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px 65px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  outline-style: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hotel-description__text {
+  margin-bottom: 30px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1776,6 +1797,7 @@ span.rating__counter::after {
 }
 
 .modal__dialog--visible {
+  max-height: 90%;
   overflow: auto;
   visibility: visible;
   opacity: 1;
@@ -2534,6 +2556,12 @@ span.rating__counter::after {
   }
   .modal__input {
     font-size: 12px;
+  }
+  .modal__message {
+    font-size: 12px;
+  }
+  .modal__button {
+    font-size: 16px;
   }
 }
 

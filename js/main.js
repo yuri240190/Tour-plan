@@ -78,7 +78,6 @@ $(document).ready(function () {
 
   }
   function closeModal() {
-    
     var body = $("body");
     body.removeClass("body-fixed")
 
