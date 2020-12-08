@@ -64,7 +64,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__wrap
       margin-left: 0
     &__legal
@@ -192,7 +193,8 @@
       grid-row-gap: 0px
       grid-gap: 0px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 100%
     &__logo
       margin-top: 0
       width: 100px
@@ -496,7 +498,9 @@
       padding-top: 73px
       grid-template-columns: 155px 1fr 1fr
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 48%
+
     &__additional
       width: 150px
     &__legal
@@ -527,7 +531,7 @@
     &__message
       font-size: 12px
     &__button
-      font-size: 16px
+      font-size: 14px
 
 @media (max-width: 576px)
 
@@ -615,6 +619,9 @@
       font-size: 30px
 
   .footer
+    &__input
+      &-group
+        flex-basis: 100%
 
     &-wrapper
       padding-top: 69px
@@ -698,9 +705,6 @@
       padding: 0
     &__inf:nth-last-child(1)
       margin-right: 0
-  .modal
-    &__dialog
-      width: 400px
 
 @media ( max-width: 480px) and (min-width: 320px)
   .modal
@@ -836,7 +840,8 @@
       &-form
         margin-top: 0
     &__input
-      margin-bottom: 20px
+      &-group
+        margin-bottom: 20px
     &__text
       margin-bottom: 30px
     &__button

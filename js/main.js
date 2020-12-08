@@ -86,10 +86,6 @@ $(document).ready(function () {
 
  });
  
- 
- 
-
-
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
@@ -109,5 +105,51 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible")
 
   };
+  // обработка форм 
+  $('.form').each(function(){
+    $(this).validate({
+     errorClass: "invalid",
+     messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must not be shorter than 2 letters"
+
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone:{
+      required: "Phone number required",
+   
+
+    },
+     email1: {
+     required :"email  required" , }, 
+  },
+  
+
+  });
+  })
+    $('.subscride__form').each(function(){
+    $(this).validate({
+    
+  
+     email: {
+     required :"email  required" , }, 
+  
+  
+})
+  
+  });
+
+  $(document).ready(function(){
+  $("#phone").mask("+7(999)999-99-99");
+})
+  $(document).ready(function(){
+  $("#phone1").mask("+7(999)999-99-99");
+})
+AOS.init();
+
 });
 

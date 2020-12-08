@@ -75,6 +75,11 @@ img {
   margin-bottom: 30px;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -962,7 +967,6 @@ span.rating__counter::after {
 }
 
 .subscride {
-  position: relative;
   width: 350px;
   height: 55px;
   border-radius: 4px;
@@ -970,7 +974,6 @@ span.rating__counter::after {
 }
 
 .subscride__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -997,6 +1000,13 @@ span.rating__counter::after {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+#email-error {
+  margin-bottom: 20px;
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+  display: none;
 }
 
 .reviews {
@@ -1704,6 +1714,10 @@ span.rating__counter::after {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1719,6 +1733,7 @@ span.rating__counter::after {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  padding: 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   outline-style: none;
@@ -1824,12 +1839,13 @@ span.rating__counter::after {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   height: 123px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -1957,7 +1973,7 @@ span.rating__counter::after {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2129,9 +2145,9 @@ span.rating__counter::after {
     grid-row-gap: 0px;
     grid-gap: 0px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .footer__logo {
     margin-top: 0;
@@ -2512,9 +2528,9 @@ span.rating__counter::after {
     -ms-grid-columns: 155px 1fr 1fr;
         grid-template-columns: 155px 1fr 1fr;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__additional {
     width: 150px;
@@ -2561,7 +2577,7 @@ span.rating__counter::after {
     font-size: 12px;
   }
   .modal__button {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -2669,6 +2685,10 @@ span.rating__counter::after {
   .plackages-title {
     font-size: 30px;
   }
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer-wrapper {
     padding-top: 69px;
     grid-row-gap: 0;
@@ -2774,9 +2794,6 @@ span.rating__counter::after {
   }
   .footer__inf:nth-last-child(1) {
     margin-right: 0;
-  }
-  .modal__dialog {
-    width: 400px;
   }
 }
 
@@ -2940,7 +2957,7 @@ span.rating__counter::after {
   .footer__contact-form {
     margin-top: 0;
   }
-  .footer__input {
+  .footer__input-group {
     margin-bottom: 20px;
   }
   .footer__text {
