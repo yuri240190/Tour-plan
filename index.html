@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,7 +40,7 @@
         </button>
       </div>
     </div>
-      <div class="navbar-bottom">
+      <div class="navbar-bottom"  >
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
@@ -50,26 +51,26 @@
           </a></li>
 
             <li class="navbar-menu__item navbar-menu__item_mobile_visible" > <form action="#" class="search navbar__search navbar__search_mobile_visible">
-              <input type="text" class="search__input" placeholder="Search Location">
+              <input type="text" action="send.php" method="POST" class="search__input" placeholder="Search Location" name="location">
               <button class="search__button">
                 <img src="img/search.svg" alt="icon">
               </button>
             </form>          
             </li>
             
-            <li class="navbar-menu__item navbar-menu__item--item  "><a href="#" class="navbar-menu__link   ">All Deals</a>
+            <li class="navbar-menu__item navbar-menu__item--item  " data-aos="fade-right" data-aos-delay="50"><a href="#" class="navbar-menu__link   ">All Deals</a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--item"><a href="# " class="navbar-menu__link  ">Hotels</a>
+            <li class="navbar-menu__item navbar-menu__item--item" data-aos="fade-right"  data-aos-delay="100"><a href="# " class="navbar-menu__link  ">Hotels</a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--item"><a href="#" class="navbar-menu__link  ">Activities</a>
+            <li class="navbar-menu__item navbar-menu__item--item" data-aos="fade-right"  data-aos-delay="150"><a href="#" class="navbar-menu__link  ">Activities</a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--item "><a href="#" class="navbar-menu__link  ">Hotel Day Packages</a>
+            <li class="navbar-menu__item navbar-menu__item--item " data-aos="fade-right"  data-aos-delay="200"><a href="#" class="navbar-menu__link  ">Hotel Day Packages</a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--item"><a href="#" class="navbar-menu__link ">Restaurants</a>
+            <li class="navbar-menu__item navbar-menu__item--item" data-aos="fade-right"  data-aos-delay="250"><a href="#" class="navbar-menu__link ">Restaurants</a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--item"><a href="#" class="navbar-menu__link  ">Events</a>
+            <li class="navbar-menu__item navbar-menu__item--item" data-aos="fade-right"  data-aos-delay="300"><a href="#" class="navbar-menu__link  ">Events</a>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--item"><a href="#" class="navbar-menu__link  ">Rodrigues</a>
+            <li class="navbar-menu__item navbar-menu__item--item" data-aos="fade-right"  data-aos-delay="350"><a href="#" class="navbar-menu__link  ">Rodrigues</a>
             </li>
        
           </ul>
@@ -160,7 +161,7 @@
         </div>
         <!-- /slider container -->
        
-       <div class="hotel-right">
+       <div class="hotel-right" >
         <div class="booking">
           <div class="booking__info">
             <div class="booking__price">
@@ -418,17 +419,32 @@
 </section> 
 
   <section class="newsletter">
-    <div class="newsletter-wrapper">
+    <div class="newsletter-wrapper" >
      
-      <h2 class="newsletter-title newsletter__title ">subscribe to our
+      <h2 class="newsletter-title newsletter__title "data-aos="fade-right">subscribe to our
       <span class="newsletter-title__strong">Newsletter</span>
-    </h2>
-    <form action="send.php" method="POST" class="subscride newsletter__subscride">
-      <input type="text" class="subscride__input" placeholder="Your email address" name="email">
+   </h2>
+<div class="subscride__wrap" >
+    <form action="send.php" method="POST" 
+    class="subscride subscride__form " data-aos="fade-left" name="email" >
+
+      <input type="email" 
+      class="subscride__input"
+       placeholder="Your email address" 
+       name="email"required>
+
       <button class="subscride__button">
       Send
       </button>
+      
+    
     </form>
+     <span  class="form-error" ></span>
+</div>
+   
+   
+ 
+    
     </div>
   </section>
   <section class="reviews">
@@ -584,25 +600,26 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activiti-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
 <!-- /card activities__card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
         <img src="img/activiti-2.jpg" alt="Gymkhana club golf course" class="card__image">
         <h3 class="card__title">Gymkhana club golf course</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /card activiries__card -->
-            <div class="card activities__card">
+            <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
               <img src="img/activiti-3.jpg" alt="Tamarind falls hikingtrip - full day" class="card__image">
               <h3 class="card__title">Tamarind falls hiking  trip&nbsp;-full day</h3>
               <button class="card__button">Book Now</button>
             </div>
             <!-- /card activities__card -->
-                  <div class="card activities__card">
+                  <div class="card activities__card" data-aos="fade-up"
+                  data-aos-delay="400">
                     <img src="img/activiti-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <button class="card__button">Book Now</button>
@@ -611,7 +628,10 @@
       </div>
     </div>
   </section>
- <footer class="footer">
+ <footer class="footer" 
+ data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
    <div class="container">
      <div class="footer-wrapper">
   <a class="logo footer__logo" href="#"><img src="img/Best_tour_plan.svg" alt="logo:Best tour plan" ></a>
@@ -711,20 +731,27 @@
      <!-- /contact-details -->
      <div class="footer__contact-form">
        <h3 class="footer__title footer__title--mb">Send us a message</h3>
-       <form action="send.php" method="POST" class="footer__form">
-         <input type="text"
-          class="input footer__input"
-          placeholder="Your Full Name*"
-        name="name">
-         <input type="text"
-          class="input footer__input"
-           placeholder="Phone Number*"
-           name="phone" >
+       <form action="send.php" method="POST" class="footer__form form">
+
+        <div class="footer__input-group">
+          <input type="text"
+           class="input footer__input"
+           placeholder="Your Full Name*" 
+           name="name" required>
+          </div>
+
+         <div class="footer__input-group">
+           <input type="tel"
+           class="input footer__input" 
+          placeholder="Phone Number*"
+           name="phone" id="phone1" required>
+          </div>
           
           <textarea class="message footer__message"
             cols="30" rows="10"
              placeholder="Message"
-             name="message" ></textarea>
+             name="message" >
+            </textarea>
              <button class="button footer__button" type="submit">Send</button>
              <span class="footer__info">* Required Fields</span>
        </form>
@@ -747,10 +774,12 @@
      <a class="modal__close" href="#"></a>
      <img class="modal__close" src="img/close.svg" alt="">
         <h3 class="modal__title modal__title--mb">booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-          <input type="text" class="input modal__input" placeholder="email*" name="email">
+
+        <form action="send.php" method="POST" class="modal__form form">
+
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+          <input type="tel" id="phone" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+          <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required>
         
           <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <div class="modal__fotter">
@@ -764,6 +793,9 @@
  <script src="./js/jquery-3.5.1.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=41b5fc20-93d8-4dd3-9d32-f3c89d7635e5" type="text/javascript"></script>
   <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/aos.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
