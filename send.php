@@ -5,7 +5,6 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$location = $_POST['location'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
@@ -82,16 +81,16 @@ try {
     //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
- // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'killer240190@mail.ru'; // Логин на почте
+   // Настройки вашей почты
+    $mail->Host       = 'smtp.mailru'; // SMTP сервера вашей почты
+    $mail->Username   = 'yuri-aldunenko.ru@yuri-aldunenko.ru'; // Логин на почте
     $mail->Password   = 'rostislove2014'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('killer240190@mail.ru', 'Юра Алдуненко'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('yuri-aldunenko.ru@yuri-aldunenko.ru', 'Юра Алдуненко'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('nastya-borodina-93@mail.ru');  
+    $mail->addAddress('killer240190@mail.ru');  
 
     // Отправка сообщения
     $mail->isHTML(true);
@@ -110,8 +109,4 @@ else {$result = "error";}
 // Отображение результата
 header('Location: thankyouemail.html');
 }
-
-
-
-
 

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link
   href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;700;800&display=swap"
-  rel="stylesheet">
+  rel="preload">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -151,7 +151,7 @@
             <div class="swiper-slide hotel-slide hotel-slide__item">
               <img
                class="hotel-slider__image" 
-              src="img/slide7.jpeg"
+              src="img/slide7.jpg"
                alt=""></div>
           
           </div>
@@ -193,8 +193,12 @@
           <button data-toggle="modal"  class="button booking__button">View Other Options</button>
         </div>
         <!-- /.booking -->
-        <div class="map" id="map">
-         </div>
+
+        <div class="ymap-container">
+          <div class="loader loader-default"></div>
+        <div id="map-yandex"></div>
+</div>
+
        </div>
        <!-- /hotel-ri-->
      </div>
@@ -278,7 +282,7 @@
 <div class="plackages-fotter">
 <div class="plackages-column">
   <span class="plackages-flash2">Flash Offer</span>
-  <img src="img/plackages.jpg" alt="" class="plackages-image  plackages-image_cover">
+  <img src="img/plackages0.jpg" alt="" class="plackages-image  plackages-image_cover">
   <div class="plackages-box">
     <h3 class="plackages-caption">Hotel Blue Haven</h3>
     <div class="plackages-room">
@@ -421,17 +425,17 @@
   <section class="newsletter">
     <div class="newsletter-wrapper" >
      
-      <h2 class="newsletter-title newsletter__title "data-aos="fade-right">subscribe to our
+      <h2 class="newsletter-title newsletter__title ">subscribe to our
       <span class="newsletter-title__strong">Newsletter</span>
    </h2>
 <div class="subscride__wrap" >
     <form action="send.php" method="POST" 
-    class="subscride subscride__form " data-aos="fade-left" name="email" >
+    class="subscride subscride__form form " name="email" id="form" >
 
       <input type="email" 
       class="subscride__input"
        placeholder="Your email address" 
-       name="email"required>
+       name="email" required >
 
       <button class="subscride__button">
       Send
@@ -629,7 +633,7 @@
     </div>
   </section>
  <footer class="footer" 
- data-aos="flip-left"
+  data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="1000">
    <div class="container">
@@ -737,14 +741,14 @@
           <input type="text"
            class="input footer__input"
            placeholder="Your Full Name*" 
-           name="name" required>
+           name="name" minlength="2" required>
           </div>
 
          <div class="footer__input-group">
            <input type="tel"
            class="input footer__input" 
           placeholder="Phone Number*"
-           name="phone" id="phone1" required>
+           name="phone" id="phone1" minlength="16" required>
           </div>
           
           <textarea class="message footer__message"
@@ -777,8 +781,9 @@
 
         <form action="send.php" method="POST" class="modal__form form">
 
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-          <input type="tel" id="phone" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required >
+          <input type="tel" id="phone" class="input modal__input" placeholder="Phone Number*" name="phone" minlength="16" required >
+
           <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required>
         
           <textarea class="message modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
